@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace BNIWebServiceTest.Controllers
 {
+    [RoutePrefix("api/Customer")]
     public class CustomerController : ApiController
     {
         private StoreProcedure sp = new StoreProcedure();
@@ -40,7 +41,7 @@ namespace BNIWebServiceTest.Controllers
             try
             {
                 GetSummaryWikipediaAPI svc = new GetSummaryWikipediaAPI();
-                var getData = sp.GetDataNasabahByNoKTP(NomorKTP);
+                var getData = sp.GetAllDataNasabah().Find(e => e.NomorKTP == NomorKTP); //sp.GetDataNasabahByNoKTP(NomorKTP);
                 getData.DeskripsiKota = svc.GetDeskripsiKota(getData.Kota).extract;
 
                 return Json(getData);

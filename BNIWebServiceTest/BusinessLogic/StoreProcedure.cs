@@ -42,41 +42,41 @@ namespace BNIWebServiceTest.BusinessLogic
             conn.Close();
         }
 
-        public DataNasabah GetDataNasabahByNoKTP(string nomorKTP)
-        {
-            DataNasabah dataNasabah = new DataNasabah();
+        //public DataNasabah GetDataNasabahByNoKTP(string nomorKTP)
+        //{
+        //    DataNasabah dataNasabah = new DataNasabah();
 
-            var con = GetConnection();
-            con.Open();
+        //    var con = GetConnection();
+        //    con.Open();
 
-            var cmd = new SqlCommand("[dbo].[GetDataNasabahByNoKTP]", con);
-            cmd.CommandType = CommandType.StoredProcedure;
+        //    var cmd = new SqlCommand("[dbo].[GetDataNasabahByNoKTP]", con);
+        //    cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.CommandTimeout = 7200;
-            var sd = new SqlDataAdapter(cmd);
-            var dt = new DataTable();
+        //    cmd.CommandTimeout = 7200;
+        //    var sd = new SqlDataAdapter(cmd);
+        //    var dt = new DataTable();
 
-            cmd.Parameters.AddWithValue("@NomorKTP", nomorKTP);
+        //    cmd.Parameters.AddWithValue("@NomorKTP", nomorKTP);
 
-            sd.Fill(dt);
-            con.Close();
+        //    sd.Fill(dt);
+        //    con.Close();
 
-            if (dt != null && dt.Rows != null && dt.Rows.Count > 0)
-            {
-                foreach (DataRow dr in dt.Rows)
-                {
-                    dataNasabah.NamaLengkap = dr["NamaLengkap"].ToString();
-                    dataNasabah.Alamat = dr["Alamat"].ToString();
-                    dataNasabah.Kota = dr["Kota"].ToString();
-                    dataNasabah.TempatLahir = dr["TempatLahir"].ToString();
-                    dataNasabah.TanggalLahir = Convert.ToDateTime(dr["TanggalLahir"]);
-                    dataNasabah.NomorKTP = dr["NomorKTP"].ToString();
-                    dataNasabah.NomorHandphone = dr["NomorHandphone"].ToString();
-                }
-            }
+        //    if (dt != null && dt.Rows != null && dt.Rows.Count > 0)
+        //    {
+        //        foreach (DataRow dr in dt.Rows)
+        //        {
+        //            dataNasabah.NamaLengkap = dr["NamaLengkap"].ToString();
+        //            dataNasabah.Alamat = dr["Alamat"].ToString();
+        //            dataNasabah.Kota = dr["Kota"].ToString();
+        //            dataNasabah.TempatLahir = dr["TempatLahir"].ToString();
+        //            dataNasabah.TanggalLahir = Convert.ToDateTime(dr["TanggalLahir"]);
+        //            dataNasabah.NomorKTP = dr["NomorKTP"].ToString();
+        //            dataNasabah.NomorHandphone = dr["NomorHandphone"].ToString();
+        //        }
+        //    }
 
-            return dataNasabah;
-        }
+        //    return dataNasabah;
+        //}
 
         public List<DataNasabah> GetAllDataNasabah()
         {

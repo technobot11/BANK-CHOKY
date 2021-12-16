@@ -87,3 +87,11 @@ C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\obj\Debug\BN
 C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\obj\Debug\BNIWebServiceTest.csproj.CopyComplete
 C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\obj\Debug\BNIWebServiceTest.dll
 C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\obj\Debug\BNIWebServiceTest.pdb
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\Docker.DotNet.dll
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\System.Buffers.dll
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\Docker.DotNet.pdb
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\System.Buffers.xml
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\TECHNOBOT\source\repos\BNIWebServiceTest\BNIWebServiceTest\bin\System.Threading.Tasks.Extensions.xml
